@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
                 if (!animalName.equals("")) {
                     Animal animal = new Animal(animalName, mImageUri);
                     mAnimalList.add(animal);
+
+
+                    /*adap.add(animal);
+                    mAnimalAdapter.notifyDataSetChanged();*/
+
+
                     mAnimalAdapter.setAnimals(mAnimalList);
                     mRecyclerView.setAdapter(mAnimalAdapter);
                     mAnimalText.setText("");

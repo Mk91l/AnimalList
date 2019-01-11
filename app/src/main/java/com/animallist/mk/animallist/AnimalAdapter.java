@@ -14,6 +14,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalHolder> {
 
     ArrayList<Animal> mAnimals;
 
+
     public AnimalAdapter(ArrayList<Animal> animals) {
         mAnimals = animals;
     }
@@ -21,7 +22,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalHolder> {
     @NonNull
     @Override
     public AnimalHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item2, parent, false);
         return new AnimalHolder(view);
     }
 
